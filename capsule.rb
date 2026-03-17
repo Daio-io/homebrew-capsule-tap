@@ -5,21 +5,21 @@
 class Capsule < Formula
   desc "Terminal podcast client for Capsule"
   homepage "https://capsulefm.io"
-  version "0.0.2"
+  version "0.0.4"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/Daio-io/homebrew-capsule-tap/releases/download/v0.0.2/capsule_darwin_amd64.tar.gz"
-    sha256 "66e6f461ea82d810596ce3753aed09d3336e1173a9d6d3635e1bec047ec74d8b"
+    url "https://github.com/Daio-io/homebrew-capsule-tap/releases/download/v0.0.4/capsule_darwin_amd64.tar.gz"
+    sha256 "14f2ec2e46ddd99edb89c01161ba2585aebfb8ee6517631f2814175ec54324cc"
 
     define_method(:install) do
       bin.install "capsule"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/Daio-io/homebrew-capsule-tap/releases/download/v0.0.2/capsule_darwin_arm64.tar.gz"
-    sha256 "6eb465c79ae3df89c0cd50021bf1e0c391e9b385edafe238e4e5968764a0b023"
+    url "https://github.com/Daio-io/homebrew-capsule-tap/releases/download/v0.0.4/capsule_darwin_arm64.tar.gz"
+    sha256 "04ce70721a3e5bb5ce9cde0c0caf1a41a76950d55cd1b354b2a36a028c079d48"
 
     define_method(:install) do
       bin.install "capsule"
